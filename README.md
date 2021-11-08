@@ -26,3 +26,6 @@ pip install faiss-gpu
 
 ### How to implement this code
 [Google colab link](https://colab.research.google.com/drive/1KchkmXpzCfymWwpWFew1Jddrp1yxPqoh?usp=sharing)
+
+### Encoded queries & Encoded passages
+[Google drive](https://drive.google.com/drive/u/1/folders/1klf65tCtM3wiVKzuF1xbfoi0fz_rnGf7)
