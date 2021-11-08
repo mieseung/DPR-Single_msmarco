@@ -30,7 +30,7 @@ def define_dsearch_args(parser):
     parser.add_argument('--tokenizer', type=str, metavar='name or path',
                         required=False,
                         help="Path to a hgf tokenizer name or path")
-    parser.add_argument('--encoded-queries', type=str, default='/content/drive/MyDrive/Miseung/NQ_with_DPR-single/', metavar='path to query encoded queries dir or queries name',
+    parser.add_argument('--encoded-queries', type=str, default='../encoded_queries/', metavar='path to query encoded queries dir or queries name',
                         required=False,
                         help="Path to query encoder pytorch checkpoint or hgf encoder model name")
     parser.add_argument('--device', type=str, metavar='device to run query encoder', required=False, default='cpu',
@@ -50,8 +50,8 @@ def define_dsearch_args(parser):
                         help="The beta parameter to control the contribution from the average vector of the PRF passages")
 
     args = easydict.EasyDict({
-        "index": '/content/drive/MyDrive/Miseung/NQ_with_DPR-single/passages/',
-        "encoded-queries": '/content/drive/MyDrive/Miseung/NQ_with_DPR-single/',
+        "index": '../encoded_passages/',
+        "encoded-queries": '../encoded_queries/',
     }
     )
 
@@ -116,7 +116,7 @@ if __name__ == '__main__':
     parser.add_argument('--output-format', type=str, metavar='format', default=OutputFormat.TREC.value,
                         help=f"Format of output. Available: {[x.value for x in list(OutputFormat)]}")
     parser.add_argument('--output', type=str, metavar='path',
-                        default='/content/drive/MyDrive/Miseung/NQ_with_DPR-single/', required=False, help="Path to output file.")
+                        default='../search/', required=False, help="Path to output file.")
     parser.add_argument('--max-passage', action='store_true',
                         default=False, help="Select only max passage from document.")
     parser.add_argument('--max-passage-hits', type=int, metavar='num', required=False, default=100,

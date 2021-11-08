@@ -6,3 +6,19 @@
 pip install pyserini
 pip install faiss-gpu
 ```
+
+### encoded_queries & encoded_passages
+```
+├── encoded_queries
+│   └── embeddings.pkl
+├── encoded_passages
+│   ├── passage_embbeding_0.pkl
+│   ├── passage_embbeding_1.pkl
+│   ├── ...
+│   └── passage_embbeding_88.pkl
+├── search
+│   ├── encoder.py
+│   ├── main.py
+│   └── searcher.py
+└── README.md
+```
