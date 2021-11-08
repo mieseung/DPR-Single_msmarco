@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 import numpy as np
 from typing import Dict, List, Union, Optional, Tuple
-from search.encoder import QueryEncoder, DenseSearchResult, PRFDenseSearchResult
+from encoder import QueryEncoder, DenseSearchResult, PRFDenseSearchResult
 from transformers.file_utils import requires_backends
 
 from pyserini.search import SimpleSearcher, Document

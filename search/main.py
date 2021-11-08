@@ -12,7 +12,7 @@ from pyserini.dsearch import BinaryDenseSearcher, TctColBertQueryEncoder, QueryE
 
 from pyserini.query_iterator import get_query_iterator, TopicsFormat
 from pyserini.output_writer import get_output_writer, OutputFormat
-from search.searcher import SimpleDenseSearcher
+from searcher import SimpleDenseSearcher
 
 # from ._prf import DenseVectorAveragePrf, DenseVectorRocchioPrf
 
